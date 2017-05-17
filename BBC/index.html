@@ -5,6 +5,18 @@
     <meta charset="utf-8">
     <title>Technology - BBC News</title>
     <style type="text/css">
+		html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, input, textarea, button, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+			border: 0;
+			color: inherit;
+			font: inherit;
+			font-size: 100%;
+			font-weight: inherit;
+			letter-spacing: inherit;
+			line-height: inherit;
+			margin: 0;
+			padding: 0;
+			vertical-align: baseline;
+		}
         #topbar {
             width: 1100px;
             height: 40px;
@@ -170,6 +182,99 @@
 			position: relative;
 			top: 10px;
 		}
+		
+		#page-container{
+			width: 1100px;
+			margin: 0 auto;
+		}
+		
+		#article-container{
+			margin-top: 15px;
+			float: left;
+			width: 680px;
+			padding-right: 15px;
+			border-right: 1px solid  #CCCCCC;
+		}
+		
+		h2{
+			font-weight: normal;
+			margin-top: 40px;
+			font-size: 20px;
+			border-bottom: 3px solid #BB1919;
+			width: 105px;
+			color: #404040;
+		}
+		
+		h3 a{
+			color: #686868;
+			font-size: 30px;
+			text-decoration: none;
+		}
+		
+		h3 a:hover{
+			color: #1167A8;
+		}
+		
+		#article-summary{
+			color: #5a5a5a;
+			width: 260px;
+			font-size: .875rem;
+			margin-top: 5px;
+			line-height: 1.28572;
+			float: left;
+		}
+		#article-summary p{
+			margin-top: 7px;
+		}
+		
+		#article-summary img{
+			height: 15px;
+			position: relative;
+			top: 2px;
+		}
+		
+		#topic-link{
+			text-decoration: none;
+			color: #A91717;
+		}
+		
+		#article-summary a:hover{
+			color: #1167A8;
+		}
+		
+		#date{
+			padding-right: 5px;
+		}
+		
+		.horizontal-bar{
+			border-left: 1px solid #CCCCCC;
+			padding-left: 10px;
+		}
+		
+		#list-item{
+			margin-top: 5px;
+		}
+		
+		#main-article-img{
+			width: 400px;
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+		
+		#article-hr{
+			width: 50px;
+			border-top: 1px #BB1919 solid;
+		}
+		
+		.article-link{
+			text-decoration: none;
+			color: #222;
+			font-weight: normal;
+		}
+		
+		#play-img-icon{
+			width: 16px;
+		}
 
     </style>
 </head>
@@ -222,7 +327,6 @@
     	<div id="menu-bar-2-container">
     		<div id="menu-bar-2">
     			<a href="#">Home</a>
-    			<a href="#">Video</a>
     			<a href="#">World</a>
     			<a href="#">Asia</a>
     			<a href="#">UK</a>
@@ -231,9 +335,36 @@
     			<a href="#">Science</a>
     			<a href="#">Magazine</a>
     			<a href="#">Entertainment &amp; Arts</a>
+    			<a href="#">Video &amp; Audio</a>
     			<a href="#">Health</a>
+    			<a href="#">Education</a>
     			<a href="#" class="no-border">More</a>
     			<img id="down-arrow" src="images/down-arrow.png">
+    		</div>
+    	</div>
+    </div>
+    
+    <div class="clear"></div>
+    
+    <div id="main-article">
+    	<div id="page-container">
+    		<h2>Technology</h2>
+    		<div id="article-container">
+				<h3><a href="#">N Korea link suspected in cyber-attack</a></h3>
+				<div id="article-summary">
+					<p>Experts see similarities with earlier hacks by a group suspected of having North Korean links.</p>
+					<div id="list-item">
+						<p><img src="images/clock.png"> <span id="date">16 May 2017</span> <span class="horizontal-bar"></span> <a id="topic-link" href="#">Technology</a>&nbsp; <span class="horizontal-bar"></span> <img src="images/comments.PNG"> 645</p>
+					</div>
+					
+					<hr align="left" id="article-hr">
+					
+					<p><a class="article-link" href="#">Global manhunt for WannaCry creators</a></p>
+					<p><a class="article-link" href="#">Your questions on the hack answered</a></p>
+					<p><a class="article-link" href="#"><img id="play-img-icon" src="images/play.png"> How to protect yourself online</a></p>
+					<p><a class="article-link" href="#">Should you pay the WannaCry ransom?</a></p>
+				</div>
+   			<img id="main-article-img" src="images/main-article-image.jpg">
     		</div>
     	</div>
     </div>
